@@ -8,7 +8,7 @@
     overflow: hidden;
     background-color: #333;
     position: fixed; /* Set the navbar to fixed position */
-    top: 0px; /* Position the navbar at the top of the page */
+    top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
 
@@ -28,24 +28,13 @@
     color: black;
 }
 
-.fixed-nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 50px;
-  background-color: #00a087;
-}
+/* overlay */
+
 .container {
   position: relative;
   width: 100%;
+
 }
-
-
-/* overlay */
-
-
 
 .image {
   display: block;
@@ -82,27 +71,6 @@
   text-align: center;
 }
 
-.myDiv {
-    position: relative;
-    z-index: -1;
-    background-color: black;
-}
-
-.myDiv .bg {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url(../images/16.jpg) center center;
-    background-repeat: no-repeat;
-
-    opacity: .5;
-    width: 100%;
-    height: 100%;
-}
-
 /* Main content */
 
 
@@ -116,7 +84,7 @@ img:hover {
 
 
 h1 {
-    padding: 100px;
+    padding-top: 100px;
     color: lightblue;
     text-align: center;
     font-size: 85px;
@@ -131,7 +99,6 @@ p {
     text-align: center;
     font-family: verdana;
     font-size: 20px;
-    padding: 20px;
 }
 
 body {
@@ -158,25 +125,23 @@ body {
 
 <div class="navbar">
   <a href="../index.html">About</a>
-  <a href="#projects">Projects</a>
+  <a href="../projects/main.html">Projects</a>
   <a href="../pdf/my_resume.pdf" target="_blank">Résumé</a>
   <a href="https://www.linkedin.com/in/yawen-li-b58044a5/" target="_blank">LinkedIn</a>
   <a href="../contact/main.html"> Contact </a>
 </div>
 
 
-<div class="myDiv">
-    <div class="bg"></div>
-    <h1 align="middle">Projects</h1>
-</div>
+<h1 align="middle">Projects</h1>
+
 
 <div class="container">
-      <a href="https://stanzles.github.io/cs184finalprojectDOCS_submit/" target="_blank">
-        <p> <img src="../images/only_logo.png" align="middle" height="100" width="100" hspace="20" > </p>
-          <div class ="overlay">
-            <div class="text">Gun N' Penguin</div>
-          </div>
-      </a>
+  <a href="https://stanzles.github.io/cs184finalprojectDOCS_submit/" target="_blank">
+    <p> <img src="../images/only_logo.png" align="middle" height="100" width="100" hspace="20" > </p>
+      <div class ="overlay">
+        <div class="text">Gun N' Penguin</div>
+      </div>
+  </a>
 </div>
 
 <div class="container">
@@ -187,7 +152,6 @@ body {
       </div>
   </a>
 </div>
-
 
 </body>
 
