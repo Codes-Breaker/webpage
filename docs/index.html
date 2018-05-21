@@ -8,7 +8,7 @@
     overflow: hidden;
     background-color: #333;
     position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    top: 0px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
 
@@ -26,6 +26,16 @@
 .navbar a:hover {
     background: #ddd;
     color: black;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #00a087;
 }
 
 /* Main content */
@@ -48,6 +58,14 @@ title {
 p {
     font-family: verdana;
     font-size: 20px;
+}
+
+p.thick{
+  font-weight: bold;
+  padding: 100px;
+  color: white;
+  text-align: center;
+  font-size: 85px;
 }
 
 .myDiv {
@@ -95,20 +113,21 @@ body {
 
 
 <body>
-
-<div class="navbar">
-  <a href="#about">About</a>
-  <a href="projects/main.html">Projects</a>
-  <a href="./pdf/my_resume.pdf" target="_blank">Résumé</a>
-  <a href="https://www.linkedin.com/in/yawen-li-b58044a5/" target="_blank">LinkedIn</a>
-</div>
+<nav class="fixed-nav-bar">
+  <div class="navbar">
+    <a href="#about">About</a>
+    <a href="projects/main.html">Projects</a>
+    <a href="./pdf/my_resume.pdf" target="_blank">Résumé</a>
+    <a href="https://www.linkedin.com/in/yawen-li-b58044a5/" target="_blank">LinkedIn</a>
+  </div>
+</nav>
 
 
 
 <div class="myDiv">
     <div class="bg"></div>
     <h1 align="middle"> Hi there, I'm Harry Li.</h1>
-    <h1>blah blah blah.......... still editing</h1>
+    <h1 align="middle">blah blah blah.......... still editing</h1>
 </div>
 
 
