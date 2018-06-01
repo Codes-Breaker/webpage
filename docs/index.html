@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
 <style>
 
@@ -22,6 +23,7 @@
     text-decoration: none;
 }
 
+
 /* Change background on mouse-over */
 .navbar a:hover {
     background: #ddd;
@@ -38,8 +40,66 @@
   background-color: #00a087;
 }
 
+
+
+
+
+.card {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    float:left;
+    overflow: auto;
+}
+
+.parent {
+  padding-left: 350px;
+
+}
+
+
+
+
+.warp{
+
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    float:right;
+    padding-right: 150px;
+
+
+}
+
+
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+
 /* Main content */
 
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
 
 
 
@@ -53,10 +113,23 @@ h1 {
 
 
 h2 {
-    padding: 100px;
+    padding: 50px;
     color: lightblue;
     text-align: center;
-    font-size: 85px;
+    font-size: 65px;
+}
+
+h3 {
+
+    color: black;
+    text-align: left;
+    font-size: 35px;
+}
+
+h4 {
+  color: grey;
+  text-align: left;
+  font-size: 20px;
 }
 
 
@@ -68,11 +141,12 @@ title {
 p {
     font-family: verdana;
     font-size: 20px;
+
 }
 
 p.thick{
   font-weight: bold;
-  padding: 100px;
+  padding: 50px;
   color: white;
   text-align: center;
   font-size: 85px;
@@ -91,7 +165,7 @@ p.thick{
     bottom: 0;
     left: 0;
     right: 0;
-    background: url(./images/17.jpg) center center;
+    background: url(./images/1.jpg) center center;
     background-repeat: no-repeat;
 
     opacity: .5;
@@ -140,7 +214,55 @@ body {
     <h1 align="middle"> Hi there, I'm Harry Li.</h1>
 </div>
 
-<h2 align="middle">blah blah blah.......... still editing</h2>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="parent">
+
+      <div class="card" align ="center">
+        <img src="./images/E12.jpg"style="width:100%">
+        <p>Harry Li</p>
+        <p class="title">Computer Science</p>
+        <p>University of California Berkeley</p>
+        <a href="https://www.linkedin.com/in/yawen-li-b58044a5/" target="_blank"><i class="fa fa-linkedin"></i></a> 
+        <p><button id="contactButton">Contact</button></p>
+      </div>
+
+
+      <div class="warp" align="center">
+        <h3><b>About Me</b></h3>
+        <h4>I came to United States when I was 15 to pursue a better education. I am studying Computer Science at University of California at Berkeley. My interests are in computer graphics, apps, games, virtual/augmented reality and artificial intelligence. In the future, I hope to enter the Gaming/VR/AR industry around the world.</h4>
+      </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  document.getElementById("contactButton").onclick = function(){
+    location.href = "contact/main.html";
+  };
+</script>
+
+
+
+
+
+
+
+
 
 
 </body>
