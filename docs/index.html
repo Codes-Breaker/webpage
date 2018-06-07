@@ -152,7 +152,7 @@ p.thick{
 
 .myDiv {
     position: relative;
-    z-index: 1;
+    z-index: -1;
     background-color: black;
 }
 
@@ -187,7 +187,11 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
   }
 
-
+@media screen and (max-width: 600px) {
+  .navbar a{
+    float: none;
+  }
+}
  
 </style>
 
@@ -197,7 +201,7 @@ body {
 
 
 <body>
-
+<div class="fixed-nav-bar">
   <div class="navbar">
     <a href="#about">About</a>
     <a href="projects/main.html">Projects</a>
@@ -205,6 +209,7 @@ body {
     <a href="https://www.linkedin.com/in/yawen-li-b58044a5/" target="_blank">LinkedIn</a>
     <a href="contact/main.html"> Contact </a>
   </div>
+</div>
 
 
 
