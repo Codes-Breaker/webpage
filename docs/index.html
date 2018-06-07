@@ -43,7 +43,11 @@
 
 
 
-
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
 
 .card {
 
@@ -198,9 +202,6 @@ body {
   h3{
     font-size: 350%;
   }
-  .img{
-    width: 200%;
-  }
 
 }
 
@@ -255,7 +256,7 @@ and (-webkit-device-pixel-ratio:3) {
   <div class="parent">
 
       <div class="card" align ="center">
-        <img src="./images/E12.jpg"style="width:100%">
+        <img src="./images/E12.jpg"class="responsive" style="width:100%">
         <p>Harry Li</p>
         <p class="title">Computer Science</p>
         <p>University of California Berkeley</p>
