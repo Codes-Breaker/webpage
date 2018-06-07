@@ -187,9 +187,18 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
   }
 
-@media screen and (max-width: 600px) {
+
+
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-device-pixel-ratio:3) {
   .navbar a{
-    float: none;
+    float:none;
+  }
+  .card{
+    zoom: 0.5;
   }
 }
  
